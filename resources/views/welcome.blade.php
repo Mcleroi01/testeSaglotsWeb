@@ -248,8 +248,9 @@
                             {{ $commande->price }}
                         </td>
 
-                         <td class="px-6 py-4">
-                            {{ $commande->created_at }}
+                        <td class="px-6 py-4">
+                            {{ $commande->created_at->format('d F Y') }}
+
                         </td>
                     </tr>
                 @endforeach
