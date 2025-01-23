@@ -227,6 +227,9 @@
                     <th scope="col" class="px-6 py-3">
                         Price
                     </th>
+                    <th scope="col" class="px-6 py-3">
+                        date commande
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -243,6 +246,10 @@
                         </td>
                         <td class="px-6 py-4">
                             {{ $commande->price }}
+                        </td>
+
+                         <td class="px-6 py-4">
+                            {{ $commande->created_at }}
                         </td>
                     </tr>
                 @endforeach
